@@ -2,8 +2,6 @@ package com.eversec.graduation.common;
 
 import java.util.List;
 
-import com.alibaba.fastjson.JSONPObject;
-
 
 
 public class ResponseData {

@@ -3,7 +3,6 @@ package com.eversec.graduation.service;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.eversec.graduation.common.ResponseData;
-import com.eversec.graduation.entity.User;
 
 public interface IUserService {
 	 ResponseData login(String phone,String pwd);
