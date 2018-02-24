@@ -1,8 +1,8 @@
-package com.eversec.graduation.service;
+package com.stu.graduation.service;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import com.eversec.graduation.common.ResponseData;
+import com.stu.graduation.common.ResponseData;
 
 public interface IUserService {
 	 ResponseData login(String phone,String pwd);

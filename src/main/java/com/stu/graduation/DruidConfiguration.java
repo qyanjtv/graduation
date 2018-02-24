@@ -1,4 +1,4 @@
-package com.eversec.graduation;
+package com.stu.graduation;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.eversec.graduation.common;
+package com.stu.graduation.common;
 
 public class Token {
 	private String access_token;

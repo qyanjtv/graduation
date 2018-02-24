@@ -1,4 +1,4 @@
-package com.eversec.graduation.controller;
+package com.stu.graduation.controller;
 
 import javax.servlet.http.HttpServletRequest;
 

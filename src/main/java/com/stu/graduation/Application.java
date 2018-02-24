@@ -1,4 +1,4 @@
-package com.eversec.graduation;
+package com.stu.graduation;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

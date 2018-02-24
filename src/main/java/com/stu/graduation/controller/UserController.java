@@ -1,4 +1,4 @@
-package com.eversec.graduation.controller;
+package com.stu.graduation.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.eversec.graduation.common.ResponseData;
-import com.eversec.graduation.service.IUserService;
-import com.eversec.graduation.utils.DesUtils;
+import com.stu.graduation.common.ResponseData;
+import com.stu.graduation.service.IUserService;
+import com.stu.graduation.utils.DesUtils;
 
 @Controller
 @RequestMapping("user/")

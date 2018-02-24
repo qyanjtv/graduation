@@ -1,4 +1,4 @@
-package com.eversec.graduation.entity;
+package com.stu.graduation.entity;
 
 import java.io.Serializable;
 

@@ -1,4 +1,4 @@
-package com.eversec.graduation.service;
+package com.stu.graduation.service;
 
 import java.io.File;
 import java.util.List;
@@ -8,12 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.eversec.graduation.common.Constant;
-import com.eversec.graduation.common.ResponseData;
-import com.eversec.graduation.dao.UserDao;
-import com.eversec.graduation.entity.User;
-import com.eversec.graduation.utils.FileUtil;
 import com.google.common.collect.Lists;
+import com.stu.graduation.common.Constant;
+import com.stu.graduation.common.ResponseData;
+import com.stu.graduation.dao.UserDao;
+import com.stu.graduation.entity.User;
+import com.stu.graduation.utils.FileUtil;
 
 @Service
 public class UserServiceImpl implements IUserService {

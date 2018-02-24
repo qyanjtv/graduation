@@ -1,4 +1,4 @@
-package com.eversec.graduation.utils;
+package com.stu.graduation.utils;
 
 public class DesUtils {
 	/** 

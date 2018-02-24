@@ -1,9 +1,9 @@
-package com.eversec.graduation.dao;
+package com.stu.graduation.dao;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
-import com.eversec.graduation.entity.User;
+import com.stu.graduation.entity.User;
 
 public interface UserDao extends JpaRepository<User, Integer> {
 
