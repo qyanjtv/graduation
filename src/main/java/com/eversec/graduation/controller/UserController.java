@@ -19,7 +19,7 @@ import com.eversec.graduation.utils.DesUtils;
 public class UserController {
 	@Autowired
 	private IUserService userService;
-
+	
 	/**
 	 * 登陆
 	 * 
