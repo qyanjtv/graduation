@@ -6,22 +6,29 @@ import java.util.Map;
 import javax.sql.DataSource;
 
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.embedded.FilterRegistrationBean;
 import org.springframework.boot.context.embedded.ServletRegistrationBean;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
+import org.springframework.orm.jpa.vendor.HibernateJpaSessionFactoryBean;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
 import com.alibaba.druid.support.http.WebStatFilter;
+
 @Configuration
 public class DruidConfiguration {
 	private static final Logger LOGGER = Logger.getLogger(DruidConfiguration.class);
+	@Autowired
+	private Environment env;
+
 
 	@Bean
 	public ServletRegistrationBean druidServlet() {
-		LOGGER.info("init Druid Servlet Configuration ");
+		LOGGER.info("############init Druid Servlet Configuration####################");
 		ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean();
 		servletRegistrationBean.setServlet(new StatViewServlet());
 		servletRegistrationBean.addUrlMappings("/druid/*");
@@ -48,6 +55,14 @@ public class DruidConfiguration {
 	@ConfigurationProperties(prefix = "spring.datasource")
 	public DataSource druidDataSource() {
 		return new DruidDataSource();
+	}
+
+	@Bean
+	public HibernateJpaSessionFactoryBean sessionFactory() {
+		System.out.println("端口："+env.getProperty("server.port"));
+		LOGGER.info("##########注入hibernate session工厂##############");
+		HibernateJpaSessionFactoryBean sessionFactory = new HibernateJpaSessionFactoryBean();
+		return sessionFactory;
 	}
 
 }
