@@ -21,7 +21,7 @@ public class User implements Serializable {
 	private String nickName;
 	private String noteName;
 	private String signature;
-	private String telphonel;
+	private String telphone;
 	private String gender;
 	private String religionId;
 	private String avatarId;
@@ -34,6 +34,12 @@ public class User implements Serializable {
 	}
 	public void setId(Integer id) {
 		this.id = id;
+	}
+	public String getTelphone() {
+		return telphone;
+	}
+	public void setTelphone(String telphone) {
+		this.telphone = telphone;
 	}
 	public String getNickName() {
 		return nickName;
@@ -53,12 +59,7 @@ public class User implements Serializable {
 	public void setSignature(String signature) {
 		this.signature = signature;
 	}
-	public String getTelphonel() {
-		return telphonel;
-	}
-	public void setTelphonel(String telphonel) {
-		this.telphonel = telphonel;
-	}
+	
 	public String getGender() {
 		return gender;
 	}

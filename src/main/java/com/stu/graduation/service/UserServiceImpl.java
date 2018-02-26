@@ -69,11 +69,10 @@ public class UserServiceImpl implements IUserService {
 		}
 		User user = new User();
 		user.setNickName(nickname);
-		user.setTelphonel(phone);
+		user.setTelphone(phone);
 		user.setPwd(pwd);
 		user.setAlipayId(alipayAccount);
 		userDao.saveAndFlush(user);
-
 		return response;
 	}
 
